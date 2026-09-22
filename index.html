@@ -1,13 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Your Profile</title>
     <meta charset="UTF-8" />
   </head>
+
   <body>
     <header>
-    <p>
-      <nav>
+      <p>
+        <nav>
           <a href="#profile">Profile</a>
           |
           <a href="#skills">Skills</a>
@@ -17,72 +19,112 @@
           <a href="#awards">Awards and Achievements</a>
           |
           <a href="#contact">Contact Me</a>
-      </nav>
-    </p>
+        </nav>
+      </p>
     </header>
+
     <main>
       <section id="profile">
         <p>
-          <img width = 120 src=https://i1.sndcdn.com/artworks-GRbvUNHnssZgvZ51-DIwieA-t500x500.jpg>
+          <img
+            width="120"
+            src="https://i1.sndcdn.com/artworks-GRbvUNHnssZgvZ51-DIwieA-t500x500.jpg"
+            alt="Profile picture"
+          >
+
           <h1>Nicolas Stewart</h1>
-          <a href="#email">jynxzi@rightclick.gg</a>
+
+          <a href="mailto:jynxzi@rightclick.gg">jynxzi@rightclick.gg</a>
           |
-          0989 311 1234
+          <a href="tel:+639893111234">0989 311 1234</a>
           |
-          <a href=#github>profile.github.com</a>
+          <a href="https://github.com/yourprofile" target="_blank">profile.github.com</a>
         </p>
 
-      <p>
-        Jynxzi is an American Twitch streamer and YouTuber best known for playing Tom Clancy's Rainbow Six Siege.
-      </p>
+        <p>
+          Jynxzi is an American Twitch streamer and YouTuber best known for playing Tom Clancy's Rainbow Six Siege.
+        </p>
+      </section>
 
       <section id="skills">
         <p>
           <h2>Skills</h2>
+
           <ul>
-          <li><a>Always Hard</a></li>
-          <li><a>Map Awareness</a></li>
-          <li><a>Great Reflex</a></li>
+            <li>Always Hard</li>
+            <li>Map Awareness</li>
+            <li>Great Reflex</li>
           </ul>
         </p>
+      </section>
 
       <section id="education">
         <p>
           <h2>Education</h2>
-          <ul>
-          <li><a>Streamer University</a></li>
-          <li><a>CEIS Malolos</a></li>
-          <li><a>Senior Citizen</a></li>
-          </ul>
-        </p>
 
-        <section id="awards">
+          <ol>
+            <li>Streamer University</li>
+            <li>CEIS Malolos</li>
+            <li>Senior Citizen</li>
+          </ol>
+        </p>
+      </section>
+
+      <section id="awards">
         <p>
           <h2>Awards</h2>
-          <ul>
-          <li><a>Gamer of The Year</a></li>
-          <li><a>Best Breakthrough Streamer</a></li>
-          <li><a>Best FPS Streamer</a></li>
-          </ul>
+
+          <ol>
+            <li>Gamer of The Year</li>
+            <li>Best Breakthrough Streamer</li>
+            <li>Best FPS Streamer</li>
+          </ol>
         </p>
+      </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-          <form>
-            <label for="fname">First name:</label><br>
-            <textarea placeholder="Your Name"></textarea><br><br>
+      <section id="contact">
+        <h2>Contact Me</h2>
 
-            <label for="email">Email:</label><br>
-            <textarea placeholder="email@gmail.com"></textarea><br><br>
+        <form>
+          <label for="fname">First name:</label><br>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Your Name"
+            required
+            maxlength="50"
+          ><br><br>
 
-            <label for="message">Message:</label><br>
-            <textarea rows="5" cols="25" placeholder="Your message"></textarea><br><br>
+          <label for="email">Email:</label><br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@gmail.com"
+            required
+            maxlength="100"
+          ><br><br>
 
-            <input type="button" onclick="Sent!" value="Send">
-          </form>
-  <footer>
-    <p>
-      <nav>
+          <label for="message">Message:</label><br>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="25"
+            placeholder="Your message"
+            required
+            maxlength="500"
+          ></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <nav>
           <a href="#profile">Profile</a>
           |
           <a href="#skills">Skills</a>
@@ -92,8 +134,9 @@
           <a href="#awards">Awards and Achievements</a>
           |
           <a href="#contact">Contact Me</a>
-      </nav>
-    </p>
-  </footer>
-    </main>
+        </nav>
+      </p>
+    </footer>
   </body>
+</html>
+```
